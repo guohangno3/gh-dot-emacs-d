@@ -3,3 +3,6 @@
 
 # Packaging
 .cask
+auto-save-list
+recentf
+.git-credentials
