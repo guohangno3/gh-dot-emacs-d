@@ -22,6 +22,18 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 10)
 
+
+
+;; ‘ˆ«ø∏ﬂ¡¡∆•≈‰¿®∫≈
+(define-advice show-paren-function (:around (fn) fix-show-paren-function)
+  "hilight enclosing parens."
+  (cond ((looking-at-p "\\s(") (funcall fn))
+	(t (save-excursion
+	     (ignore-errors (backward-up-list))
+	     (funcall fn)
+	     ))
+	)
+)
 ;;(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 (show-paren-mode)
 
