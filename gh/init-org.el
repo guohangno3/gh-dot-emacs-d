@@ -17,9 +17,4 @@
 
 
 
-
-
-
-
-
 (provide 'init-org)
