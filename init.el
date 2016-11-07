@@ -23,7 +23,3 @@
 (setq custom-file (expand-file-name "gh/custom.el" user-emacs-directory))
 (load-file custom-file)
 
-
-
-
-
