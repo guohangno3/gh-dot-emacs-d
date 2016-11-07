@@ -24,7 +24,7 @@
 
 
 
-;; ‘ˆ«ø∏ﬂ¡¡∆•≈‰¿®∫≈
+;; improve parentheses match highlight
 (define-advice show-paren-function (:around (fn) fix-show-paren-function)
   "hilight enclosing parens."
   (cond ((looking-at-p "\\s(") (funcall fn))
