@@ -11,7 +11,7 @@
 ;;;;;;;;;;;; 快速打开gtd文件
 (defun open-my-gtd-file()
     (interactive)
-    (find-file "~/gtd.org")
+    (find-file "~/.emacs.d/org-files/gtd.org")
 )
 (global-set-key (kbd "<f3>") 'open-my-gtd-file)
 

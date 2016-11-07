@@ -1,7 +1,9 @@
 ;;;;;;;;;;;;;;;;;; org mode
 (require 'org)
 (setq org-src-fontify-natively t)
-(setq org-agenda-files '("~/org"))
+;;(setq org-agenda-files '("~/.emacs.d/org-files"))
+(setq org-agenda-files "~/.emacs.d/org-files/gtd.org")
+;;(setq org-agenda-files '(concat user-emacs-directory "org-files"))
 (global-set-key (kbd "C-c a") 'org-agenda)
 
 ;;;;;;;;;;; 
