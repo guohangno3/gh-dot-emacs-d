@@ -45,7 +45,7 @@
 (global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 
-;;(global-set-key (kbd "C-2") 'set-mark-command)
+(global-set-key (kbd "C-2") 'set-mark-command)
 
 
 (global-set-key (kbd "C-c p f") 'counsel-git)
