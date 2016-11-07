@@ -9,9 +9,18 @@
 
 ;;;;;; only one
 ;;(add-to-list 'package-archives '("melpa"   . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives '("melpa-cn" . "http://elpa.zilongshanren.com/melpa/") t)
+;;(add-to-list 'package-archives '("melpa-cn" . "http://elpa.zilongshanren.com/melpa/") t)
 ;;(add-to-list 'package-archives '("org-cn"   . "http://elpa.zilongshanren.com/org/") t)
 ;;(add-to-list 'package-archives '("gnu-cn"   . "http://elpa.zilongshanren.com/gnu/") t)
+(setq package-archives 
+    '(
+        ("gnu"          . "http://elpa.zilongshanren.com/gnu/")
+        ("melpa"        . "http://elpa.zilongshanren.com/melpa/")
+        ("melpa-stable" .   "http://elpa.zilongshanren.com/melpa-stable/")
+        ("marmalade"    .   "http://elpa.zilongshanren.com/marmalade/")
+        ("org"          .   "http://elpa.zilongshanren.com/org/")
+    )
+)
 
 ;; cl - Common Lisp Extension
 (require 'cl)
@@ -21,6 +30,7 @@
     '(
         ;; --- Auto-completion ---
         company
+        neotree
         
         ;; --- Better Editor ---
         hungry-delete
