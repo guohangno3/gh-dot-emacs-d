@@ -40,6 +40,7 @@
         
         ;; --- Major Mode ---
         js2-mode
+	js2-refactor
         
         ;; --- Minor Mode ---
         nodejs-repl
@@ -51,8 +52,15 @@
         
         ;; --- org ---
         org
-        
+
+	;; 插件可以自动将光标移动到，新创建的窗口中
         popwin
+
+	web-mode
+
+	;;occur-mode
+
+	expand-region
     )
     "Default packages"
 )

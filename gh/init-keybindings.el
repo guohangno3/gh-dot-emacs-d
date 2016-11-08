@@ -60,7 +60,10 @@
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
 )
 
+(global-set-key (kbd "M-s o") 'occur-dwim)
+(global-set-key (kbd "M-s i") 'counsel-imenu)
 
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 
 
