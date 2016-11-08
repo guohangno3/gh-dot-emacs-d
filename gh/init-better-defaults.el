@@ -24,7 +24,7 @@
 
 
 
-;; improve parentheses match highlight
+;; 光标在括号内时就高亮包含内容的两个括号
 (define-advice show-paren-function (:around (fn) fix-show-paren-function)
   "hilight enclosing parens."
   (cond ((looking-at-p "\\s(") (funcall fn))
