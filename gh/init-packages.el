@@ -14,8 +14,9 @@
 ;;(add-to-list 'package-archives '("gnu-cn"   . "http://elpa.zilongshanren.com/gnu/") t)
 (setq package-archives 
     '(
-        ("gnu"          .   "http://elpa.zilongshanren.com/gnu/")
+        
         ("melpa"        .   "http://elpa.zilongshanren.com/melpa/")
+        ("gnu"          .   "http://elpa.zilongshanren.com/gnu/")
         ("melpa-stable" .   "http://elpa.zilongshanren.com/melpa-stable/")
         ("marmalade"    .   "http://elpa.zilongshanren.com/marmalade/")
         ("org"          .   "http://elpa.zilongshanren.com/org/")
@@ -62,6 +63,8 @@
 	;;occur-mode
 
 	expand-region
+
+	cd-compile
     )
     "Default packages"
 )
