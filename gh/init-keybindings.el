@@ -63,8 +63,12 @@
 (global-set-key (kbd "M-s o") 'occur-dwim)
 (global-set-key (kbd "M-s i") 'counsel-imenu)
 
+
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 
 
+
+
 (provide 'init-keybindings)
+

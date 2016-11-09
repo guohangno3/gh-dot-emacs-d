@@ -64,7 +64,7 @@
 
 	expand-region
 
-	cd-compile
+	iedit
     )
     "Default packages"
 )
@@ -130,9 +130,8 @@
 (require 'popwin)
 (popwin-mode t)
 
-
-
 (require 'swiper)
+
 
 
 (provide 'init-packages)

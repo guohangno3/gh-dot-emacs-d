@@ -125,7 +125,7 @@
     )
   )
 
-(setq popwin:popup-window-position 'right)
+(setq popwin:popup-window-position 'bottom)
 
 ;; improve occur
 (defun occur-dwim ()
@@ -141,8 +141,14 @@
           regexp-history)
     (call-interactively 'occur))
 
-
-
+    
+    
+;;(defun my-byte-compile-and-recompile-directory (directory)
+;;  (interactive "DByte compile and recompile directory: \n")
+;;  (byte-recompile-directory directory 0)
+;;  )
+;;(my-byte-compile-and-recompile-directory "~/.emacs.d")
 
 
 (provide 'init-better-defaults)
+
