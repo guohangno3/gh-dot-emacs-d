@@ -129,7 +129,7 @@
 
 (global-company-mode t)
 
-;;(load-theme 'monokai t)
+(load-theme 'monokai t)
 
 (require 'popwin)
 (popwin-mode t)

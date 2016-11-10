@@ -1,3 +1,8 @@
-** learn b
-SCHEDULED: <2016-11-07 鍛ㄤ竴 18:00> DEADLINE: <2016-11-07 鍛ㄤ竴 19:00>
-
+** TODO learn b							   :learning:
+   SCHEDULED: <2016-11-11 鍛ㄤ簲 18:00> DEADLINE: <2016-11-11 鍛ㄤ簲 19:00>
+** TODO 做个表格
+   SCHEDULED: <2016-11-10 周四>
+** TODO 我的
+   SCHEDULED: <2016-11-10 周四>
+** TODO 来点儿其他的？
+   SCHEDULED: <2016-11-10 周四>
