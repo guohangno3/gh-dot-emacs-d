@@ -139,6 +139,7 @@ while ($PID <= 47)
     printf "thread %d", $TID
     thread $PID
     bt
+    $PID=$PID+1
 end
 
 打印所有线程的栈
