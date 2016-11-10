@@ -1481,5 +1481,10 @@ Org Mode
                            
                            
                            
-                           
+;;;;; 查看函数定义的interactive可使用的类型
 C-h f interactive
+
+
+;;;;; 神器
+occur + iedit
+

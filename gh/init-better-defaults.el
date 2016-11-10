@@ -150,7 +150,7 @@
   )
 ;;(my-byte-compile-and-recompile-directory "~/.emacs.d")
 
-
+;;(setq default-directory "~")
 
 (provide 'init-better-defaults)
 
