@@ -93,18 +93,22 @@
     )
 )
 
-(unless (my/packages-installed-p)
-    (message "%s" "Refreshing package database...")
-    (package-refresh-contents)
-    (dolist (pkg my/packages)
-        (when (not (package-installed-p pkg))
-            (progn
-                (message "xxx installing %s" pkg)
-                (package-install pkg)
+(defun my-install-all-packages()
+  (interactive)
+    (unless (my/packages-installed-p)
+        (message "%s" "Refreshing package database...")
+        (package-refresh-contents)
+        (dolist (pkg my/packages)
+            (when (not (package-installed-p pkg))
+                (progn
+                    (message "xxx installing %s" pkg)
+                    (package-install pkg)
+                )
             )
         )
     )
 )
+;;(my-install-all-packages)
 
 ;(require 'hungry-delete)
 (global-hungry-delete-mode t)
@@ -125,7 +129,7 @@
 
 (global-company-mode t)
 
-(load-theme 'monokai t)
+;;(load-theme 'monokai t)
 
 (require 'popwin)
 (popwin-mode t)
