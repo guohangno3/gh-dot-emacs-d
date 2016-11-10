@@ -1,0 +1,192 @@
+#sed的if-else条件处理
+
+
+sed -n '/bsp/!p' file
+sed -n '/bsp/!d' file
+!号不是修饰p而是修饰前面的匹配模式的xxx，可以这么理解吗?, 忽略大小写的I选项也同理
+
+
+
+#t是条件跳转，如果匹配成功则跳转到a，if(true)-else，T则是匹配失败则跳转，if(false)-else
+sed "/ccc/s/$/\tYES/;ta;s/$/\tNO/;:a" test.txt
+
+#如果table在前面，可以实现循环
+
+#b是无条件跳转到a，同goto
+sed "/ccc/s/$/\tYES/;ba;s/$/\tNO/;:a" test.txt
+
+sed -n "/ccc/ \
+    {
+        s/$/\tYES/;
+        a\new line
+        p;
+    };
+    t end;
+    s/$/\tNO/p;
+    :end" \
+    test.txt
+
+sed -n "/ccc/I\
+    {
+        s/$/\tYES/
+        p
+        b end;
+    }
+    {
+        s/$/\tNO/p
+    }
+    :end" \
+    test.txt
+
+sed -n "/ccc/ \
+    {
+        s/$/\tYES/;     #实现行尾追加，同理实现行首添加???
+        a\new line
+        p;
+    };
+    bend;               #强制跳转，相当于此句和目标tag之间的命令没有
+    s/$/\tNO/p;
+    :end" \
+    test.txt
+
+
+
+sed "/abc/ \
+    {
+        s/$/\ttrue/;
+        b end;
+    }
+    s/$/\tfalse/;
+    :end
+    " ${file}
+#匹配成功的行后添加\ttrue，匹配失败的行后添加\tfalse，即：首行的模式匹配后的{}是整体执行的。
+
+
+
+sed "/abc/ \
+    s/$/\ttrue/;
+    b end;
+    s/$/\tfalse/;
+    :end
+    " ${file}
+#只会在匹配成功的行后面添加\ttrue，匹配失败的行没有行为，即：b end这一句是独立的，每次都执行。
+
+
+
+#满足条件后，多操作同时处理
+sed -n "/^tcp/I{        #匹配以"tcp"开头的行，不区分大小写
+        !d;             #不删除，即是删除其它行
+        /.*[-]$/d;      #以"-"结束的行删除
+        p;
+    }" \
+    test.txt
+    
+sed -n "/./{
+        /^tcp/I!d;      #以"tcp"开头的行不删除
+        /.*[-]$/d;      #以"-"结束的行删除
+        p;
+    }" \
+    test.txt 
+
+sed -e "aaa" -e "bbb"
+
+sed -n -e '/id="23"/{s/isopen="1"/isopen="0"/p;}' -e '/id="24"/{s/isopen="1"/isopen="0"/p;};' datafile
+等价于
+sed -n '
+    /id="23"/{s/isopen="1"/isopen="0"/p;};
+    /id="24"/{s/isopen="1"/isopen="0"/p;};
+' datafile
+
+
+
+#sed中使用shell命令
+sed "s/^/$(echo $R%ANDOM).rmvb_/g"
+sed "s/^/$(date +"%Y%m%d").rmvb_/g"
+
+
+
+#添加行
+CONTENT="111
+222
+333
+444
+555"
+echo "${CONTENT}" | sed -e "/222/{  \
+a\aaa\r\nbbb
+q;
+}"
+sed -i '/原行内容/a要添加的新一行内容' 文件
+sed -i '25a/usr/local/php.ini' aaa.txt          #要在第25行插入一行新的内容 /usr/local/php.ini
+sed -i '/I love apple/aDo you love it' aaa.txt  #在特定内容后插入一行
+
+
+
+#删除包含"My"的行到包含"You"的行之间的行(包括My行和You行)
+sed '/My/,/You/d' datafile
+
+
+
+#行首的某些特殊字符有时候需要添加转义符，比如#和$
+#用#做分隔符，#为第一个字符时要转义
+sed 's#/home/test/task/#abc/#g'
+sed '\#/home/test/bin/aa.sh#d'
+
+
+
+#utf-8
+#在utf-8编码的文件中添加utf-8编码的文本，
+#因首行有格式数据，不能直接写在执行的脚本文件里，要存到单独的文件里，并且舍弃第一行，例:
+sed -n "1,/abc/p" input_file >> tmp_file    #第一部分
+sed -n "1!p" append_txt >> tmp_file         #要添加的数据
+sed -n "1,/abc/!p" >> tmp_file              #剩下的部分
+mv tmp_file input_file                      #重命名
+
+#同理，如果是匹配字符串也是utf-8编码，也要先用这种方式事，先将pattern字符串以及目标字符串都以utf-8编码方式保存到单独的文件中，
+#再(通过sed)读取到变量中处理，读取的时候可以指定行，如：
+PATTERN="$(sed "3p")"
+#也可用一定格式来描述，如：":pattern=不知道:dest=没关系:"，然后在行循环中通过如下的方式获得相关数据：
+PATTERN=$(sed -n "s/:pattern=\([^:]*\):.*/\1/Ip")
+DEST=$(sed -n "s/:dest=\([^:]*\):.*/\1/Ip")
+
+#同时sed的输出文件需要事先以utf-8编码的方式创建好，并且不能用覆盖方式，同时sed的输出文件需要事先以utf8编码的方式创建好，并且不能用覆盖方式
+#或者用sed二进制的方式强制确定文件头，如:
+echo -e -n "\xEF\xBB\xBF" > output_file.txt
+LINE_NUM=0
+while read LINE
+do
+    LINE_NUM=$(expr ${LINE_NUM} + 1)
+    PATTERN=$(echo "${LINE}" | sed -n "s/.*:pattern=\([^:]*\):.*/\1/Ip")
+    DEST=$(echo "${LINE}" | sed -n "s/.*:dest=\([^:]*\):.*/\1/Ip")
+    if test -z "${PATTERN}" -o -z "${DEST}"; then
+        echo "line_num=${LINE_NUM} invalid format : ${LINE}"
+        continue
+    fi
+    sed -n "s/${PATTERN}/${DEST}/p" data_file.txt >> output_file.txt
+done<<EOF
+$(cat pattern_file.txt)
+EOF
+
+
+
+#直接处理二进制/十六进制
+s 's/\x11\x22/\xAA\xBB/g' binfile > new_binfile
+#\x5B是'['，前面要加转义符，下面两项等价
+sed "s/\x0A\\\x5b\x41/abc/g" a.txt
+sed "s/\x0A\[\x41/abc/g" a.txt
+
+
+
+#直接对指定行做处理
+sed 
+sed "1s/\x11\x11\x11/\xEF\xBB\xBF" a.txt    #第一行
+sed "1i\\\xEF\xBB\xBF" a.txt    
+sed "1a\\\x11\x22\x33" a.txt
+sed "\$a\\\x11\x22\x33" a.txt               #最后一行
+sed '$a\\\x11\x22\x33' a.txt
+sed "10r /root/test.txt" a.txt > b.txt      #在第10行插入文件
+
+#行范围
+sed -n '5,10{/pattern/p}' file
+
+#只匹配一次
+echo  "aasdfasdfasdf" | sed -n "/^Revision: /{s/^Revision: \(.*\)$/\1/p;q;}"
