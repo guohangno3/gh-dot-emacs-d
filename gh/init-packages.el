@@ -110,31 +110,13 @@
 )
 ;;(my-install-all-packages)
 
-;(require 'hungry-delete)
-(global-hungry-delete-mode t)
-
-;;(require 'smartparens-config) ;; auto-load
-(smartparens-global-mode t)
 
 
-;; 修正lisp模式下输入单引号的问题
-(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
-(sp-local-pair 'lisp-interaction-mode "'" nil :actions nil)
-;; 也可以把上面两句合起来
-;;(sp-local-pair '(emacs-lisp-mode lisp-interaction-mode) "'" nil :actions nil)
 
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 
-(global-company-mode t)
-
-(load-theme 'monokai t)
-
-(require 'popwin)
-(popwin-mode t)
-
-(require 'swiper)
 
 
 

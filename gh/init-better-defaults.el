@@ -21,6 +21,9 @@
 ;;(require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-menu-items 10)
+;;(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+;;(global-set-key "\C-x\ C-r" 'recentf-open-files)
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 
 
@@ -60,7 +63,6 @@
     (interactive)
     (indent-region (point-min) (point-max))
 )
-
 (defun indent-region-or-buffer()
     "Indent a region if selected, otherwise the whole buffer."
     (interactive)
@@ -77,6 +79,7 @@
         )
     )
 )
+(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
   
 
@@ -96,6 +99,7 @@
         try-complete-lisp-symbol
     )
 )
+(global-set-key (kbd "C-/") 'hippie-expand)
 
 
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -106,6 +110,13 @@
 (put 'dired-find-alternate-file 'disable nil)
 (require 'dired-x)
 (setq dired-dwim-target t)
+;;;; 延迟定义，加载了dired之后再绑定，避免绑定
+(with-eval-after-load 'dired
+    (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+)
+
+
+
 
 ;;;;; C-q C-m to generate (^M)
 (defun hidden-dos-eol ()
@@ -139,8 +150,9 @@
               (when (stringp sym)
                 (regexp-quote sym))))
           regexp-history)
-    (call-interactively 'occur))
-
+    (call-interactively 'occur)
+)
+(global-set-key (kbd "M-s o") 'occur-dwim)
     
 
 
@@ -156,6 +168,54 @@
   )
 
 ;;(setq default-directory "~")
+
+;(require 'hungry-delete)
+(global-hungry-delete-mode t)
+
+
+;;(require 'smartparens-config) ;; auto-load
+(smartparens-global-mode t)
+
+
+
+;; 修正lisp模式下输入单引号的问题
+(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
+(sp-local-pair 'lisp-interaction-mode "'" nil :actions nil)
+;; 也可以把上面两句合起来
+;;(sp-local-pair '(emacs-lisp-mode lisp-interaction-mode) "'" nil :actions nil)
+
+
+(global-company-mode t)
+
+
+
+(require 'popwin)
+(popwin-mode t)
+
+
+
+;;;;;;;;;;;;;;;; swiper
+(require 'swiper)
+(global-set-key "\C-s" 'swiper)
+;(global-set-key (kbd "C-c C-r") 'ivy-resume)
+;(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+;(global-set-key (kbd "<f1> l") 'counsel-load-library)
+;(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+;(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+;(global-set-key (kbd "C-c g") 'counsel-git)
+;(global-set-key (kbd "C-c p f") 'counsel-git)
+;(global-set-key (kbd "C-c j") 'counsel-git-grep)
+;(global-set-key (kbd "C-c k") 'counsel-ag)
+;(global-set-key (kbd "C-x l") 'counsel-locate)
+;(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+;(define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
+(global-set-key (kbd "M-s i") 'counsel-imenu)
+
+
 
 (provide 'init-better-defaults)
 
