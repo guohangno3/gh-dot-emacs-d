@@ -193,6 +193,9 @@
 (popwin-mode t)
 
 
+;; Ivy is a generic completion mechanism for Emacs
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
 
 ;;;;;;;;;;;;;;;; swiper
 (require 'swiper)

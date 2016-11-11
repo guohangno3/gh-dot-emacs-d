@@ -65,6 +65,9 @@
 	expand-region
 
 	iedit
+
+	window-numbering
+	;;window-number 
     )
     "Default packages"
 )
@@ -111,11 +114,16 @@
 ;;(my-install-all-packages)
 
 
+;; example : to always assign the calculator window the number 9
+;;(setq window-numbering-assign-func
+;;      (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
+
+;;(require 'window-number)
+;;(window-number-mode 1)
+;;(global-set-key (kbd "C-x o") 'window-number-switch)
 
 
 
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
 
 
 

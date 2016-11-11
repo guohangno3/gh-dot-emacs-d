@@ -10,6 +10,7 @@
 
 (global-hl-line-mode t)
 
+(window-numbering-mode t)
 
 (load-theme 'monokai t)
 
