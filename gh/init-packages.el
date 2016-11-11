@@ -26,15 +26,17 @@
 
 ;; cl - Common Lisp Extension
 (require 'cl)
-(require 'js2-mode)
+
 
 
 ;; Add Packages
-(defvar my/packages 
+(defvar my-packages
     '(
         ;; --- Auto-completion ---
         company
+        
         neotree
+        ranger
         
         ;; --- Better Editor ---
         hungry-delete
@@ -44,7 +46,7 @@
         
         ;; --- Major Mode ---
         js2-mode
-	js2-refactor
+        js2-refactor
         
         ;; --- Minor Mode ---
         nodejs-repl
@@ -73,17 +75,15 @@
         
         which-key
         hydra
-    
+        
     )
     "Default packages"
 )
 
+(setq package-selected-packages my-packages)
 
-
-(setq package-selected-packages my/packages)
-
-(defun my/packages-installed-p()
-    (loop for pkg in my/packages
+(defun my-packages-installed-p()
+    (loop for pkg in my-packages
         ;;if (not (package-installed-p pkg))
         when (not (package-installed-p pkg))
         do
@@ -105,11 +105,12 @@
 )
 
 (defun my-install-all-packages()
-  (interactive)
-    (unless (my/packages-installed-p)
+    (interactive)
+    
+    (unless (my-packages-installed-p)
         (message "%s" "Refreshing package database...")
         (package-refresh-contents)
-        (dolist (pkg my/packages)
+        (dolist (pkg my-packages)
             (when (not (package-installed-p pkg))
                 (progn
                     (message "xxx installing %s" pkg)
@@ -148,6 +149,7 @@
 (require 'which-key)
 (which-key-mode)
 
+(require 'js2-mode)
 
 
 (provide 'init-packages)
