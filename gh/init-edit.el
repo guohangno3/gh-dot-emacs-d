@@ -7,7 +7,6 @@
 (setq ivy-use-virtual-buffers t)
 
 ;;;;;;;;;;;;;;;; swiper
-(require 'swiper)
 (global-set-key "\C-s" 'swiper)
 ;;(global-set-key (kbd "C-c C-r") 'ivy-resume)
 ;;(global-set-key (kbd "<f6>") 'ivy-resume)
@@ -111,7 +110,7 @@
 )
 (global-set-key (kbd "M-s o") 'occur-dwim)
 
-;;(require 'hungry-delete)
+
 (global-hungry-delete-mode t)
 
 ;; 修正lisp模式下输入单引号的问题

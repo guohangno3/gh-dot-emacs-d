@@ -25,7 +25,6 @@
 )
 
 ;;;;;;;;;;;;;;; nodejs
-;;(require 'nodejs-repl)
 ;;(nodejs-repl)
 
 

@@ -1,8 +1,6 @@
 ;;;;;;;;;;;;;;;;;; org mode
 
-(require 'org)
-(require 'org-install)
-(require 'ob-tangle)
+
 
 (setq org-src-fontify-natively t)
 ;;(setq org-agenda-files (list "~/.emacs.d/org-files/gtd.org"))

@@ -131,7 +131,15 @@
 ;;(require 'smartparens-config) ;; auto-load
 (smartparens-global-mode t)
 
+(require 'popwin)
+(require 'swiper)
 
+;;(require 'hungry-delete)
+;;(require 'hungry-delete)
+
+(require 'org)
+(require 'org-install)
+(require 'ob-tangle)
 
 
 

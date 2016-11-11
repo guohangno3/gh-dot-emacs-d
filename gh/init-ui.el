@@ -41,7 +41,7 @@
   )
 
 
-(require 'popwin)
+
 (popwin-mode t)
 (setq popwin:popup-window-position 'bottom)
 
