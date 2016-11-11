@@ -53,7 +53,7 @@
   )
 
 
-;;(setq default-directory "~")
+(setq default-directory "~")
 
 
 

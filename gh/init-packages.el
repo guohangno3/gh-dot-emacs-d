@@ -57,19 +57,23 @@
         ;; --- org ---
         org
 
-	;; 插件可以自动将光标移动到，新创建的窗口中
+        ;; 插件可以自动将光标移动到，新创建的窗口中
         popwin
 
-	web-mode
-
-	;;occur-mode
-
-	expand-region
-
-	iedit
-
-	window-numbering
-	;;window-number 
+        web-mode
+    
+        ;;occur-mode
+    
+        expand-region
+    
+        iedit
+    
+        window-numbering
+        ;;window-number 
+        
+        which-key
+        hydra
+    
     )
     "Default packages"
 )
@@ -140,6 +144,9 @@
 (require 'org)
 (require 'org-install)
 (require 'ob-tangle)
+
+(require 'which-key)
+(which-key-mode)
 
 
 

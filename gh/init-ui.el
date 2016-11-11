@@ -41,10 +41,15 @@
   )
 
 
-
 (popwin-mode t)
 (setq popwin:popup-window-position 'bottom)
 
+
+;;(which-key-setup-side-window-bottom)
+;;(which-key-setup-side-window-right)
+;;(which-key-setup-side-window-right-bottom)
+;;(which-key-setup-minibuffer)
+;;(setq which-key-popup-type 'minibuffer)
 
 
 (load-theme 'monokai t)
