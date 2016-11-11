@@ -29,6 +29,8 @@
 ;;(nodejs-repl)
 
 
+
+
 (defun my-web-mode-indent-setup ()
   (setq web-mode-markup-indent-offset 2) ; web-mode, html tag in html file
   (setq web-mode-css-indent-offset 2)    ; web-mode, css in html file
@@ -56,8 +58,10 @@
 
 (global-set-key (kbd "C-c t i") 'my-toggle-web-indent)
 
+
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c C-m")
+
 
 (defun js2-imenu-make-index ()
         (interactive)

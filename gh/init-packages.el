@@ -26,6 +26,8 @@
 
 ;; cl - Common Lisp Extension
 (require 'cl)
+(require 'js2-mode)
+
 
 ;; Add Packages
 (defvar my/packages 
@@ -71,6 +73,8 @@
     )
     "Default packages"
 )
+
+
 
 (setq package-selected-packages my/packages)
 
@@ -123,6 +127,7 @@
 ;;(global-set-key (kbd "C-x o") 'window-number-switch)
 
 
+;;(require 'smartparens)
 ;;(require 'smartparens-config) ;; auto-load
 (smartparens-global-mode t)
 
