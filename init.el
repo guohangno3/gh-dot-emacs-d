@@ -5,10 +5,10 @@
 
 (add-to-list 'load-path "~/.emacs.d/gh")
 (require 'init-packages)
-(require 'init-ui)
 (require 'init-better-defaults)
 (require 'init-mode)
 (require 'init-org)
+(require 'init-ui)
 (require 'init-keybindings)
 
 
