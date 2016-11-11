@@ -123,6 +123,8 @@
 ;;(global-set-key (kbd "C-x o") 'window-number-switch)
 
 
+;;(require 'smartparens-config) ;; auto-load
+(smartparens-global-mode t)
 
 
 

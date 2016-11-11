@@ -1,0 +1,6 @@
+ls
+grep 
+grep -inr "emacs-lisp-mode" .
+grep -inr "emacs-lisp-mode" gh --color
+grep -inr "smartparen" .
+grep -inr "smartparen" .

@@ -7,6 +7,7 @@
 (require 'init-packages)
 (require 'init-better-defaults)
 (require 'init-mode)
+(require 'init-edit)
 (require 'init-org)
 (require 'init-ui)
 (require 'init-keybindings)
