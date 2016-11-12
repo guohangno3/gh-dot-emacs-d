@@ -53,7 +53,9 @@
   )
 
 
-(setq default-directory "~")
+(setq default-directory "d:/home/")
+
+(set-language-environment "UTF-8")
 
 
 

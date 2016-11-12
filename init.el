@@ -25,3 +25,8 @@
 (load-file custom-file)
 
 (put 'dired-find-alternate-file 'disabled nil)
+
+
+
+;;(setq-default default-directory "~")
+

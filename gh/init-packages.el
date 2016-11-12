@@ -31,7 +31,8 @@
 
 ;; Add Packages
 (defvar my-packages
-    '(
+  '(
+
         ;; --- Auto-completion ---
         company
         
@@ -58,6 +59,7 @@
         
         ;; --- org ---
         org
+	org-pomodoro
 
         ;; 插件可以自动将光标移动到，新创建的窗口中
         popwin
@@ -75,7 +77,6 @@
         
         which-key
         hydra
-        
     )
     "Default packages"
 )
@@ -106,7 +107,6 @@
 
 (defun my-install-all-packages()
     (interactive)
-    
     (unless (my-packages-installed-p)
         (message "%s" "Refreshing package database...")
         (package-refresh-contents)
@@ -143,8 +143,7 @@
 ;;(require 'hungry-delete)
 
 (require 'org)
-(require 'org-install)
-(require 'ob-tangle)
+
 
 (require 'which-key)
 (which-key-mode)
