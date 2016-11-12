@@ -1,4 +1,4 @@
-;;(package-initialize)
+﻿;;(package-initialize)
 
 ;; M-x info -> emacs lisp intro
 

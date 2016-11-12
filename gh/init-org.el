@@ -1,5 +1,8 @@
-;;;;;;;;;;;;;;;;;; org mode
+﻿;;;;;;;;;;;;;;;;;; org mode
 
+;;(with-eval-after-load 'org
+;;  (settings with org)
+;;  )
 
 ;;;;;;;; Org-mode 文本内语法高亮
 (require 'org)

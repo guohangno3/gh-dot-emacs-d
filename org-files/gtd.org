@@ -1,16 +1,16 @@
-** TODO ÎåÔËÁùÆøÇï¶¬½¡¿µ½²×ù
-   DEADLINE: <2016-11-12 ÖÜÁù 16:30> SCHEDULED: <2016-11-12 ÖÜÁù 14:30>
-   ÐìÖÇÓÂ
-   ±¨Ãû·ÑÓÃ£º20Ôª/ÈË*
-** TODO ÒõÑô¾ÅÕë½²×ù
-   DEADLINE: <2016-11-18 ÖÜÎå 16:30> SCHEDULED: <2016-11-18 ÖÜÎå 14:30>
+ï»¿** TODO äº”è¿å…­æ°”ç§‹å†¬å¥åº·è®²åº§
+   DEADLINE: <2016-11-12 å‘¨å…­ 16:30> SCHEDULED: <2016-11-12 å‘¨å…­ 14:30>
+   å¾æ™ºå‹‡
+   æŠ¥åè´¹ç”¨ï¼š20å…ƒ/äºº*
+** TODO é˜´é˜³ä¹é’ˆè®²åº§
+   DEADLINE: <2016-11-18 å‘¨äº” 16:30> SCHEDULED: <2016-11-18 å‘¨äº” 14:30>
 
 
 
 
 
 
-* ¹¤×÷°²ÅÅ
+* å·¥ä½œå®‰æŽ’
 
 ** TODO [#B] test item
 
@@ -22,7 +22,7 @@
 
 *** TODO [#B] this is new 
 
-* ÓéÀÖÐÝÏÐ
+* å¨±ä¹ä¼‘é—²
 ** TODO [#B] seeeeeeeee
 
 ** TODO [#B] also a new 

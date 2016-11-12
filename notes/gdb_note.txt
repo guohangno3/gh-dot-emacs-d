@@ -1,4 +1,4 @@
-###.gdbinit###
+﻿###.gdbinit###
 handle pass
 handle nostop
 set confirm off
@@ -14,20 +14,20 @@ set print pretty
 -silent
 
 gdb -args ./a.out -c -m -t
-set args �Cb �Cx
+set args –b –x
 show args
 
 cd
 dir
 
-�鿴�����ǰ5��ֵ
+查看数组的前5个值
 p arr[0]@5
 
-signal����
+signal处理
 handle pass
 handle nostop
 
-�ϵ�
+断点
 break 46 if testsize==100
 break csras_server/server.cpp:46
 break 123
@@ -40,7 +40,7 @@ end
 clear server.cpp:123
 
 
-tuiģʽ
+tui模式
 (cmd)command
 (src)source
 (asm)assembly
@@ -52,54 +52,54 @@ winheight src +/-5
 focus next/prev
 
 
-set scheduler-locking on            # ���߳��½�ֹ�߳��л�
-set scheduler-locking off|on|step   #������ʵ��ʹ�ù����̵߳��Ե��˶����Է��֣�
-                                    #��ʹ��step����continue������Ե�ǰ�������̵߳�ʱ��
-                                    #�����߳�Ҳ��ͬʱִ�еģ���ôֻ�ñ����Գ���ִ���أ�
-                                    #ͨ���������Ϳ���ʵ���������
-                                    #off �������κ��̣߳�Ҳ���������̶߳�ִ�У�����Ĭ��ֵ�� 
-                                    #on ֻ�е�ǰ�����Գ����ִ�С� 
-                                    #step �ڵ�����ʱ�򣬳���next��һ�����������(��Ϥ������˿���֪����
-                                    #����ʵ��һ�����öϵ�Ȼ��continue����Ϊ)���⣬ֻ�е�ǰ�̻߳�ִ�С�
+set scheduler-locking on            # 多线程下禁止线程切换
+set scheduler-locking off|on|step   #估计是实际使用过多线程调试的人都可以发现，
+                                    #在使用step或者continue命令调试当前被调试线程的时候，
+                                    #其他线程也是同时执行的，怎么只让被调试程序执行呢？
+                                    #通过这个命令就可以实现这个需求。
+                                    #off 不锁定任何线程，也就是所有线程都执行，这是默认值。 
+                                    #on 只有当前被调试程序会执行。 
+                                    #step 在单步的时候，除了next过一个函数的情况(熟悉情况的人可能知道，
+                                    #这其实是一个设置断点然后continue的行为)以外，只有当前线程会执行。
 
 
-break test.c:123 thread all         # �������߳�����Ӧ���������öϵ�
-thread apply ID1 ID2 command        # ��һ�����߶���߳�ִ��GDB����command�� 
-thread apply all command            # �����б������߳�ִ��GDB����command
-set target-async 1                  # �첽ģʽ
+break test.c:123 thread all         # 在所有线程中相应的行上设置断点
+thread apply ID1 ID2 command        # 让一个或者多个线程执行GDB命令command。 
+thread apply all command            # 让所有被调试线程执行GDB命令command
+set target-async 1                  # 异步模式
 set pagination off
 set non-stop on                     
 
-����core����
-uname -a �鿴��������
-ulimit -a �鿴Ĭ�ϲ���
-ulimit -c 1024  ����core�ļ���СΪ1024
-ulimit -c unlimit ����core�ļ���СΪ����
+设置core环境
+uname -a 查看机器参数
+ulimit -a 查看默认参数
+ulimit -c 1024  设置core文件大小为1024
+ulimit -c unlimit 设置core文件大小为无限
 
-����
+帮助
 help xxx
 apropos xxx
 
-��ת
+跳转
 jump 5 
 j 123
-��Ҫע����ǣ���ת����5��ִ�����֮���������û�жϵ������ִ�У���������ͣ�������ˡ�
-�����tbreakʹ�á�
+需要注意的是，跳转到第5行执行完毕之后，如果后面没有断点则继续执行，而并不是停在那里了。
+可配合tbreak使用。
 
-ִ��N����һ��
+执行N次下一步
 next N
 
 util N
 
 
-������ʽ�仯��ͣס
+检测表达式变化则停住
 watch i != 10 
-���i != 10�������ʽһ���仯����ͣס��watch Ϊ����ʽ��������expr����һ���۲�㡣һ������ʽֵ�б仯ʱ������ͣס����(Ҳ��һ�ֶϵ�)��
-rwatch ��expr����ʱ��ͣס����
-awatch ��expr������дʱ��ͣס����
+这里，i != 10这个表达式一旦变化，则停住。watch 为表达式（变量）expr设置一个观察点。一量表达式值有变化时，马上停住程序(也是一种断点)。
+rwatch 当expr被读时，停住程序。
+awatch 当expr被读或被写时，停住程序。
 
 
-����ָ���ڴ�
+监视指定内存
 p &(s_packet->data)
 $10 = (const uint8_t **) 0x7fffec0015d8
 awatch *(uint8_t*)0x7fffec0015d8
@@ -109,30 +109,30 @@ info frame
 info source
 
 
-��ֹһ�����ڵ��Եĳ���
+终止一个正在调试的程序
 kill
 
-���a��һ�����飬10��Ԫ�أ����Ҫ��ʾ�� 
+如果a是一个数组，10个元素，如果要显示则： 
 print *a@10
 p a[0]@10
 
 
 print /x var 
-�������֪����print����ָ����ʾ�ĸ�ʽ��������'/x'��ʾ16���Ƶĸ�ʽ�� 
-����֧�ֵı�����ʾ��ʽ�У� 
-x  ��ʮ�����Ƹ�ʽ��ʾ������ 
-d  ��ʮ���Ƹ�ʽ��ʾ������ 
-u  ��ʮ�����Ƹ�ʽ��ʾ�޷������͡� 
-o  ���˽��Ƹ�ʽ��ʾ������ 
-t  �������Ƹ�ʽ��ʾ������ 
-a  ��ʮ�����Ƹ�ʽ��ʾ������ 
-c  ���ַ���ʽ��ʾ������ 
-f  ����������ʽ��ʾ������
+这里可以知道，print可以指定显示的格式，这里用'/x'表示16进制的格式。 
+可以支持的变量显示格式有： 
+x  按十六进制格式显示变量。 
+d  按十进制格式显示变量。 
+u  按十六进制格式显示无符号整型。 
+o  按八进制格式显示变量。 
+t  按二进制格式显示变量。 
+a  按十六进制格式显示变量。 
+c  按字符格式显示变量。 
+f  按浮点数格式显示变量。
 
 
 
 
-ѭ��
+循环
 set $PID=1
 # $PID=$PID+1
 while ($PID <= 47)
@@ -142,12 +142,12 @@ while ($PID <= 47)
     $PID=$PID+1
 end
 
-��ӡ�����̵߳�ջ
-set logging file <�ļ���>
+打印所有线程的栈
+set logging file <文件名>
 set logging on
 thread apply all bt
 set logging off
 quit
 
-��ӡ�ַ�������ʡ��
+打印字符串，无省略
 printf "%s\r\n", addr

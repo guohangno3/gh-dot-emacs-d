@@ -1,4 +1,4 @@
-;;;;;;;;;;;; ¿ìËÙ´ò¿ªÅäÖÃÎÄ¼ş
+ï»¿;;;;;;;;;;;; å¿«é€Ÿæ‰“å¼€é…ç½®æ–‡ä»¶
 (defun open-my-init-file()
     (interactive)
     (find-file "~/.emacs.d/init.el")
@@ -8,7 +8,7 @@
 ;;(global-set-key (kbd "<f2>\ <f3>") 'open-my-init-file)
 
 
-;;;;;;;;;;;; ¿ìËÙ´ò¿ªgtdÎÄ¼ş
+;;;;;;;;;;;; å¿«é€Ÿæ‰“å¼€gtdæ–‡ä»¶
 (defun open-my-gtd-file()
     (interactive)
     (find-file "~/.emacs.d/org-files/gtd.org")

@@ -1,5 +1,5 @@
-
-;;;;;;;;; ËõĞ´, ÓÃ·Ç×ÖÄ¸»òÕßÊı×ÖÀ´´¥·¢²¹È«À©Õ¹
+ï»¿
+;;;;;;;;; ç¼©å†™, ç”¨éå­—æ¯æˆ–è€…æ•°å­—æ¥è§¦å‘è¡¥å…¨æ‰©å±•
 (abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table 
     '(
@@ -35,7 +35,7 @@
 (put 'dired-find-alternate-file 'disable nil)
 (require 'dired-x)
 (setq dired-dwim-target t)
-;;;; ÑÓ³Ù¶¨Òå£¬¼ÓÔØÁËdiredÖ®ºóÔÙ°ó¶¨£¬±ÜÃâ°ó¶¨
+;;;; å»¶è¿Ÿå®šä¹‰ï¼ŒåŠ è½½äº†diredä¹‹åå†ç»‘å®šï¼Œé¿å…ç»‘å®š
 (with-eval-after-load 'dired
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
 )
