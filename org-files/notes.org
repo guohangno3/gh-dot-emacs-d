@@ -1,0 +1,8 @@
+
+
+* Quick notes
+** TODO [#C] 研究emacs编码
+http://blog.csdn.net/wxgiter/article/details/6935889
+  
+  [2016-11-12 周六 23:05]
+

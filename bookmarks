@@ -1,20 +1,20 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+ï»¿;;;; Emacs Bookmark Format Version 1 ;;;;
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored-marker"
- (filename . "~/.emacs.d/org-files/gtd.org")
- (front-context-string . "** TODO [#B] als")
- (rear-context-string . "#B] seeeeeeeee\n\n")
- (position . 385))
+ (filename . "~/.emacs.d/org-files/notes.org")
+ (front-context-string . "** TODO [#C] ç ”ç©¶e")
+ (rear-context-string . "1-12 å‘¨å…­ 23:05]\n\n")
+ (position . 121))
 ("org-refile-last-stored"
- (filename . "~/.emacs.d/org-files/gtd.org")
- (front-context-string . "** TODO [#B] als")
- (rear-context-string . "#B] seeeeeeeee\n\n")
- (position . 385))
+ (filename . "~/.emacs.d/org-files/notes.org")
+ (front-context-string . "** TODO [#C] ç ”ç©¶e")
+ (rear-context-string . "1-12 å‘¨å…­ 23:05]\n\n")
+ (position . 121))
 ("org-capture-last-stored"
  (filename . "~/.emacs.d/org-files/gtd.org")
- (front-context-string . "\n* ÓéÀÖÐÝÏÐ\n** TODO ")
- (rear-context-string . "B] this is new \n")
- (position . 325))
+ (front-context-string . "** TODO [#C] ç ”ç©¶e")
+ (rear-context-string . "\n\n* Quick notes\n")
+ (position . 463))
 )

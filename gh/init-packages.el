@@ -121,6 +121,7 @@
     )
 )
 ;;(my-install-all-packages)
+;; M-x package-install xxx
 
 
 ;; example : to always assign the calculator window the number 9
