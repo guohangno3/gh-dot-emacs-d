@@ -29,7 +29,7 @@
 
 
 ;;;;; 设置 org 模板
-;;(defun my/retrieve-chrome-current-tab-url()
+;;(defun my-retrieve-chrome-current-tab-url()
 ;;    "Get the URL of the active tab of the first window"
 ;;    (interactive)
 ;;        (let ((result (do-applescript
@@ -51,7 +51,7 @@
 	 "** TODO [#B] %?\n  %i\n"
 	 :empty-lines 1)
 	("c" "chrome" entry (file+headline "~/.emacs.d/org-files/gtd.org" "Quick notes")
-	 ;;"* TODO [#C] %?\n %(my/retrieve-chrome-current-tab-url)\n %i\n %U"
+	 ;;"* TODO [#C] %?\n %(my-retrieve-chrome-current-tab-url)\n %i\n %U"
 	 "* TODO [#C] %?\n %i\n %U"
 	 )
 	)
