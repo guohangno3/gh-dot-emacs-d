@@ -85,8 +85,19 @@
     ;;yasnippet
     auto-yasnippet
 
+
+    ;; powerline
+    ;; powerline-evil
+
     evil
     evil-leader
+    evil-surround
+    evil-nerd-commenter
+
+    mwe-log-commands
+
+    ;; pallet
+    
     )
   "Default packages"
   )
@@ -159,7 +170,8 @@
 
 
 (require 'which-key)
-(which-key-mode)
+(which-key-mode 1)
+(setq which-key-side-window-location 'right)
 
 (require 'js2-mode)
 
@@ -187,22 +199,58 @@
 ;;(global-set-key (kbd "C-w") 'backward-kill-word)
 ;;(global-set-key (kbd "C-z") 'evil-toggle-key)
 
+;; 这些模式进入的时候是evil模式 
+(dolist
+    (mode
+     '(ag-mode
+       flycheck-error-list-mode
+       git-rebase-mode
+       )
+     )
+  (add-to-list 'evil-emacs-state-modes mode))
+(add-hook
+ 'occur-mode-hook
+ (lambda ()
+   (evil-add-hjkl-bindings occur-mode-map 'emacs
+     (kbd "/") 'evil-search-forward
+     (kbd "n") 'evil-search-next
+     (kbd "N") 'evil-search-previous
+     (kbd "C-d") 'evil-scroll-down
+     (kbd "C-u") 'evil-scroll-up
+     ))
+ )
+
+
 (global-evil-leader-mode)
 ;;(setq evil-leader/in-all-states t)
 (setq evil-leader/leader "SPC")
 
 (evil-leader/set-key
- "ff" 'find-file
- "bb" 'switch-to-buffer
- "0"  'select-window-0
- "1"  'select-window-1
- "2"  'select-window-2
- "3"  'select-window-3
- "w/" 'split-window-right
- "w-" 'split-window-below
- ":"  'counsel-M-x
- "wM" 'delete-other-windows
- )
+  "ff" 'find-file
+  "bb" 'switch-to-buffer
+  "0"  'select-window-0
+  "1"  'select-window-1
+  "2"  'select-window-2
+  "3"  'select-window-3
+  "w/" 'split-window-right
+  "w-" 'split-window-below
+  ":"  'counsel-M-x
+  "wM" 'delete-other-windows
+  )
+
+
+;; (require 'powerline)
+;; (powerline-default-theme)
+;; (require 'powerline-evil)
+
+
+(define-key evil-normal-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
+(define-key evil-visual-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
+;;(evilnc-default-hotkeys)
+
+
+
+;; (mwe:open-command-log-buffer t)
 
 
 
