@@ -42,7 +42,7 @@
 ;;;;;;;; hippie completion
 ;; hippie expand is dabbrev expand on steroids
 (setq hippie-expand-try-functions-list 
-    '(
+      '(
         try-expand-dabbrev
         try-expand-dabbrev-all-buffers
         try-expand-dabbrev-from-kill
@@ -53,8 +53,8 @@
         try-expand-line
         try-complete-lisp-symbol-partially
         try-complete-lisp-symbol
-    )
-)
+	)
+      )
 (global-set-key (kbd "C-/") 'hippie-expand)
 
 
@@ -66,27 +66,36 @@
 ;;;;;;;;;;;; indent
 ;;(electric-indent-mode 1)
 (defun indent-buffer ()
-    "Indent the currently visited buffer."
-    (interactive)
-    (indent-region (point-min) (point-max))
-)
+  "Indent the currently visited buffer."
+  (interactive)
+  (indent-region (point-min) (point-max))
+  )
 (defun indent-region-or-buffer()
-    "Indent a region if selected, otherwise the whole buffer."
-    (interactive)
-    (save-excursion
-        (if (region-active-p)
-            (progn
-                (indent-region (region-beginning) (region-end))
-                (message "Indented selected region.")
-            )
-            (progn
-                (indent-buffer)
-                (message "Indented buffer.")
-            )
-        )
+  "Indent a region if selected, otherwise the whole buffer."
+  (interactive)
+  (save-excursion
+    (if (region-active-p)
+	(progn
+	  (indent-region (region-beginning) (region-end))
+	  (message "Indented selected region.")
+	  )
+      (progn
+	(indent-buffer)
+	(message "Indented buffer.")
+	)
+      )
     )
-)
+  )
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
+
+;;defun my-kill-region()
+;; (interactive)
+;; (if (region-active-p)
+;;     (kill-region)
+;;   (backward-kill-word)
+;;   )
+;; )
+;;global-set-key (kbd "C-w") 'my-kill-region) 
 
 ;;;;; C-q C-m to generate (^M)
 (defun remove-dos-eol()
@@ -102,18 +111,18 @@
 
 ;; improve occur
 (defun occur-dwim ()
-    "Call `occur' with a sane default."
-    (interactive)
-    (push (if (region-active-p)
-              (buffer-substring-no-properties
-               (region-beginning)
-               (region-end))
-            (let ((sym (thing-at-point 'symbol)))
-              (when (stringp sym)
-                (regexp-quote sym))))
-          regexp-history)
-    (call-interactively 'occur)
-)
+  "Call `occur' with a sane default."
+  (interactive)
+  (push (if (region-active-p)
+	    (buffer-substring-no-properties
+	     (region-beginning)
+	     (region-end))
+	  (let ((sym (thing-at-point 'symbol)))
+	    (when (stringp sym)
+	      (regexp-quote sym))))
+	regexp-history)
+  (call-interactively 'occur)
+  )
 (global-set-key (kbd "M-s o") 'occur-dwim)
 
 

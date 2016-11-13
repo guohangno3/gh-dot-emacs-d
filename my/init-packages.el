@@ -20,8 +20,8 @@
         ("marmalade"    .   "http://elpa.zilongshanren.com/marmalade/")
         ("org"          .   "http://elpa.zilongshanren.com/org/")
         ("melpa"        .   "https://melpa.org/packages/")
-	("popkit"       .   "http://elpa.popkit.org/packages/")
-	)
+        ("popkit"       .   "http://elpa.popkit.org/packages/")
+        )
       )
 
 ;; cl - Common Lisp Extension
@@ -93,42 +93,42 @@
 (setq package-selected-packages my-packages)
 
 (defun my-packages-installed-p()
-  (loop for pkg in my-packages
-        ;;if (not (package-installed-p pkg))
-        when (not (package-installed-p pkg))
-        do
-        (progn
-	  (message "xxx %s not installed" pkg)
-	  (return nil)
-	  )
-					;else do
-					;(progn
-					;    (message "xxx %s installed" pkg)
-					;)
-        
-        finally 
-        (progn
-	  (message "all packages are installed")
-	  (return t)
-	  )
-	)
-  )
+       (loop for pkg in my-packages
+             ;;if (not (package-installed-p pkg))
+             when (not (package-installed-p pkg))
+             do
+             (progn
+               (message "xxx %s not installed" pkg)
+               (return nil)
+               )
+                                        ;else do
+                                        ;(progn
+                                        ;    (message "xxx %s installed" pkg)
+                                        ;)
+             
+             finally 
+             (progn
+               (message "all packages are installed")
+               (return t)
+               )
+             )
+       )
 
 (defun my-install-all-packages()
-  (interactive)
-  (unless (my-packages-installed-p)
-    (message "%s" "Refreshing package database...")
-    (package-refresh-contents)
-    (dolist (pkg my-packages)
-      (when (not (package-installed-p pkg))
-	(progn
-	  (message "xxx installing %s" pkg)
-	  (package-install pkg)
-	  )
-	)
-      )
-    )
-  )
+       (interactive)
+       (unless (my-packages-installed-p)
+               (message "%s" "Refreshing package database...")
+               (package-refresh-contents)
+               (dolist (pkg my-packages)
+                       (when (not (package-installed-p pkg))
+                         (progn
+                           (message "xxx installing %s" pkg)
+                           (package-install pkg)
+                           )
+                         )
+                       )
+               )
+       )
 (my-install-all-packages)
 ;; M-x package-install xxx
 
@@ -165,7 +165,9 @@
 
 ;;;;; flycheck
 ;;(global-flycheck-mode t)
+
 (add-hook 'js2-mode-hook 'flycheck-mode)
+
 
 
 ;;;;; 代码块扩展
@@ -180,7 +182,9 @@
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
-(setq-default evil-want-C-u-scroll t)
+;;(setq-default evil-want-C-u-scroll t)
+;;(global-set-key (kbd "C-w") 'backward-kill-word)
+
 
 
 (provide 'init-packages)
