@@ -188,8 +188,8 @@
 ;;(global-set-key (kbd "C-z") 'evil-toggle-key)
 
 (global-evil-leader-mode)
-(setq evil-leader/in-all-states t)
-(setq evil-leader/leader 'SPC)
+;;(setq evil-leader/in-all-states t)
+(setq evil-leader/leader "SPC")
 
 (evil-leader/set-key
  "ff" 'find-file
