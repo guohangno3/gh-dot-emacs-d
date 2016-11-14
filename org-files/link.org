@@ -1,94 +1,166 @@
 * Link Notes
-
 ** emacs
 *** org 
-
 **** org-mode: 最好的文档编辑利器，没有之一
 http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html 
- 
-
 **** Org-mode,最强的任务管理利器，没有之一
 http://www.cnblogs.com/holbrook/archive/2012/04/14/2447754.html 
- 
-
 **** 用Org-mode实现GTD
 http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html 
- 
-
 **** 神器中的神器org-mode之入门篇
 http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html#sec-4-7 
- 
- 
 
-*** other emacs issue
+**** rlister/org-present: Ultra-minimalist presentation minor-mode for Emacs org-mode.
+https://github.com/rlister/org-present
+**** 使用 Org-mode 来写博客 | 子龙山人
+https://4gamers.cn/blog/2015-07-19-add-org-mode-support.html
+**** Emacs org-mode之大纲_emacs学习_IDE_编程学习网_ITEEDU
+http://www.iteedu.com/ide/emacs/org-mode/outline.php
+**** [emacs] org-mode的一些小技巧 - 巴蛮子 - 博客园
+http://www.cnblogs.com/bamanzi/p/org-mode-tips.html
+**** 用Org-mode实践《奇特的一生》 - 西代零零发 - 博客频道 - CSDN.NET
+http://blog.csdn.net/dc_726/article/details/8623879
+**** Exporting Agenda Views - The Org Manual
+http://orgmode.org/manual/Exporting-Agenda-Views.html
+**** Agenda column view - The Org Manual
+http://orgmode.org/manual/Agenda-column-view.html#Agenda-column-view
+**** Agenda dispatcher - The Org Manual
+http://orgmode.org/manual/Agenda-dispatcher.html#Agenda-dispatcher
+**** Built-in agenda views - The Org Manual
+http://orgmode.org/manual/Built_002din-agenda-views.html#Built_002din-agenda-views
+**** Presentation and sorting - The Org Manual
+http://orgmode.org/manual/Presentation-and-sorting.html#Presentation-and-sorting
+**** Org-mode - 陳聽溪 - 博客园
+http://www.cnblogs.com/taosim/articles/3376130.html
+**** Emacs 的org-mode [agenda view] - 轻风淡云追似远 - 博客频道 - CSDN.NET
+http://blog.csdn.net/donglin425/article/details/7049500?locationNum=2
+**** org-mode，最强的任务管理利器，没有之一
+http://www.360doc.com/content/14/0302/22/16002580_357203601.shtml
+**** org-mode - 热门问答 - 知乎
+http://www.zhihu.com/topic/19649552/hot
+*** spacemacs
+**** Frequently Asked Questions
+http://spacemacs.org/doc/FAQ.html
+**** syl20bnr/spacemacs at develop
+https://github.com/syl20bnr/spacemacs/tree/develop
+**** Category: Emacs | 子龙山人
+https://zilongshanren.com/categories/Emacs/
+**** Master Emacs in 21 Days
+http://book.emacs-china.org/
+**** 子龙山人
+https://zilongshanren.com/
+**** 如何评价 Emacs 的配置文件 Spacemacs？ - 知乎用户的回答 - 知乎
+https://www.zhihu.com/question/29692328/answer/45272808
+**** spacemacs的加载次序_「电脑玩物」中文网我们只是「电脑玩物」 -
+http://www.07net01.com/2015/05/844856.html
+**** spacemacs快速入门 - vduoluo的博客 - 博客频道 - CSDN.NET
+http://blog.csdn.net/vduoluo/article/details/49623679
+**** 安装和使用spacemacs - 博客频道 - CSDN.NET
+http://blog.csdn.net/csfreebird/article/details/52744771
+**** spacemacs/DOCUMENTATION.org at master · syl20bnr/spacemacs
+https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org
+**** Spacemacs Rocks 第一季 全部视频目录 · Issue #5 · emacs-china/Spacemacs-rocks
+https://github.com/emacs-china/Spacemacs-rocks/issues/5
+**** Spacemacs Rocks 第二季 全部视频目录 · Issue #20 · emacs-china/Spacemacs-rocks
+https://github.com/emacs-china/Spacemacs-rocks/issues/20
+**** Spacemacs Rocks: 中文 FAQ · Issue #6 · emacs-china/Spacemacs-rocks
+https://github.com/emacs-china/Spacemacs-rocks/issues/6
 
-**** 研究emacs编码
-http://blog.csdn.net/wxgiter/article/details/6935889
-
-**** Emacs的书签功能介绍
-http://mp.weixin.qq.com/s?__biz=MzAwOTIxMjg0NQ==&mid=2654974006&idx=1&sn=0409ef34831436603895d9076e460010&chksm=80a816f4b7df9fe2682aef4b9e38f6909586fc61184041172c625371013fab89a9cb4b118b4b&scene=0#wechat_redirect 
- 
-
-**** 一年成为Emacs高手(像神一样使用编辑器)
-http://blog.csdn.net/redguardtoo/article/details/7222501/ 
- 
-
-**** Emacs 当前文件快速查找内容
-https://zilongshanren.com/blog/2015-10-15-nagivate-quickly-in-the-current-buffer.html
- 
-
-**** Mastering Key Bindings in Emacs
-https://www.masteringemacs.org/article/mastering-key-bindings-emacs
- 
- 
-**** Master Emacs in 21 Days : Spacemacs Rocks 第二季
-http://book.emacs-china.org/#orgheadline29
-
-
-**** emacs china
-https://emacs-china.org/
-
-
-**** ELPA 镜像
+**** zilongshanren/spacemacs-private: My Spacemacs config
+https://github.com/zilongshanren/spacemacs-private
+*** elpa
+**** MELPA
+https://melpa.org/#/
+**** ELPA 镜像 - Emacs China
 http://elpa.emacs-china.org/
 
-
+*** elisp
+**** Learn elisp in Y Minutes
+https://learnxinyminutes.com/docs/elisp/
+**** elisp - Optional parameter defaults - Emacs Stack Exchange
+http://emacs.stackexchange.com/questions/14199/optional-parameter-defaults
+**** Practical Common Lisp
+http://www.gigamonkeys.com/book/
+**** Elisp
+http://docs.huihoo.com/homepage/shredderyin/emacs_elisp.html
+**** ［推荐］李杀网的elisp简明教程
+https://www.douban.com/group/topic/9719353/
+**** elisp入门_简单学习网
+http://www.tceic.com/jkgllh18h7360h4i2k3l6464.html
+*** others 
+**** 研究emacs编码
+http://blog.csdn.net/wxgiter/article/details/6935889
+**** Emacs的书签功能介绍
+http://mp.weixin.qq.com/s?__biz=MzAwOTIxMjg0NQ==&mid=2654974006&idx=1&sn=0409ef34831436603895d9076e460010&chksm=80a816f4b7df9fe2682aef4b9e38f6909586fc61184041172c625371013fab89a9cb4b118b4b&scene=0#wechat_redirect 
+**** 一年成为Emacs高手(像神一样使用编辑器)
+http://blog.csdn.net/redguardtoo/article/details/7222501/ 
+**** Emacs 当前文件快速查找内容
+https://zilongshanren.com/blog/2015-10-15-nagivate-quickly-in-the-current-buffer.html
+**** Mastering Key Bindings in Emacs
+https://www.masteringemacs.org/article/mastering-key-bindings-emacs
+**** Master Emacs in 21 Days : Spacemacs Rocks 第二季
+http://book.emacs-china.org/#orgheadline29
+**** emacs china
+https://emacs-china.org/
+**** ELPA 镜像
+http://elpa.emacs-china.org/
 **** MELPA
 http://melpa.org/
+**** Emacs学习笔记(7)：简单的配置 - 心内求法 - 博客园
+http://www.cnblogs.com/holbrook/archive/2012/03/06/2381636.html
+
+**** 十个提升效率的emacs配置 - OPEN 开发经验库
+http://www.open-open.com/lib/view/open1431870822229.html
+**** Writing Go in Emacs
+https://dominik.honnef.co/posts/2013/03/emacs-go-1/
+
+**** Getting Started - MELPA
+https://melpa.org/#/getting-started
 
 
+**** Emacs China
+https://emacs-china.org/
+**** Emacs is sexy
+http://emacs.sexy/
 
+**** Emacs 当前文件快速查找内容 | 子龙山人
+https://4gamers.cn/blog/2015-10-15-nagivate-quickly-in-the-current-buffer.html
+**** Emacs 绑定键盘的技巧。
+http://docs.huihoo.com/homepage/shredderyin/wiki/KeyBinding.html
 ** golang
+*** default 
 
-*** golang内存分配
+**** golang内存分配
 http://www.cnblogs.com/yjf512/p/5147365.html 
- 
-
-*** go语言web编程
+**** go语言web编程
 file:///E:/book/golang/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/preface.html 
- 
-
-*** Golang之bytes.buffer
+**** Golang之bytes.buffer
 http://studygolang.com/articles/5843 
- 
- 
-
-** git 
-
-*** git实验之代码提交
-http://blog.csdn.net/crylearner/article/details/7685158 
- 
-*** github : guohangno3
-https://github.com/guohangno3/gh-dot-emacs-d
-
-
-** new
-**** ExcelHome - 全球领先的Excel门户,Office视频教程培训中心
-http://www.excelhome.net/index.html
-**** 酷壳 – CoolShell.cn
-http://coolshell.cn/
 **** 文章 - Golang中国
 http://golangtc.com/articles
+
+**** Learn Go in Y Minutes
+https://learnxinyminutes.com/docs/go/
+
+** git 
+*** git实验之代码提交
+http://blog.csdn.net/crylearner/article/details/7685158 
+*** github : guohangno3
+https://github.com/guohangno3/gh-dot-emacs-d
+*** guohangno3/gh-dot-emacs-d: private dot emacs.d directory bak
+https://github.com/guohangno3/gh-dot-emacs-d
+*** zilongshanren (子龙山人)
+https://github.com/zilongshanren
+*** git实验之代码提交 - crylearner的专栏 - 博客频道 - CSDN.NET
+http://blog.csdn.net/crylearner/article/details/7685158
+** excel 
+**** ExcelHome - 全球领先的Excel门户,Office视频教程培训中心
+http://www.excelhome.net/index.html
+
+** new
+**** 酷壳 – CoolShell.cn
+http://coolshell.cn/
+
 **** 肺、肠胃、肝胆、肾病_萧宏慈_新浪博客
 http://blog.sina.com.cn/s/articlelist_1573471910_13_1.html
 **** 科学与信仰
@@ -133,106 +205,13 @@ http://www.iqiyi.com/a_19rrhabcll.html
 http://www.iqiyi.com/a_19rrhb3xvl.html
 **** 诛仙电视剧/诛仙青云志全集下载_迅雷下载_迅雷迷电影天堂
 http://www.xunleimi.com/huayudianshiju/42309/?t=1472286490595
-**** Emacs学习笔记(7)：简单的配置 - 心内求法 - 博客园
-http://www.cnblogs.com/holbrook/archive/2012/03/06/2381636.html
-**** 十个提升效率的emacs配置 - OPEN 开发经验库
-http://www.open-open.com/lib/view/open1431870822229.html
-**** Frequently Asked Questions
-http://spacemacs.org/doc/FAQ.html
-**** syl20bnr/spacemacs at develop
-https://github.com/syl20bnr/spacemacs/tree/develop
-**** Category: Emacs | 子龙山人
-https://zilongshanren.com/categories/Emacs/
-**** Master Emacs in 21 Days
-http://book.emacs-china.org/
-**** 子龙山人
-https://zilongshanren.com/
-**** 如何评价 Emacs 的配置文件 Spacemacs？ - 知乎用户的回答 - 知乎
-https://www.zhihu.com/question/29692328/answer/45272808
-**** MELPA
-https://melpa.org/#/
-**** rlister/org-present: Ultra-minimalist presentation minor-mode for Emacs org-mode.
-https://github.com/rlister/org-present
-**** Getting Started - MELPA
-https://melpa.org/#/getting-started
+
 **** Learn X in Y Minutes: Scenic Programming Language Tours
 https://learnxinyminutes.com/
-**** Learn elisp in Y Minutes
-https://learnxinyminutes.com/docs/elisp/
-**** Learn Go in Y Minutes
-https://learnxinyminutes.com/docs/go/
-**** Writing Go in Emacs
-https://dominik.honnef.co/posts/2013/03/emacs-go-1/
-**** spacemacs的加载次序_「电脑玩物」中文网我们只是「电脑玩物」 -
-http://www.07net01.com/2015/05/844856.html
-**** spacemacs快速入门 - vduoluo的博客 - 博客频道 - CSDN.NET
-http://blog.csdn.net/vduoluo/article/details/49623679
-**** 安装和使用spacemacs - 博客频道 - CSDN.NET
-http://blog.csdn.net/csfreebird/article/details/52744771
-**** spacemacs/DOCUMENTATION.org at master · syl20bnr/spacemacs
-https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org
-**** Emacs China
-https://emacs-china.org/
-**** ELPA 镜像 - Emacs China
-http://elpa.emacs-china.org/
-**** 使用 Org-mode 来写博客 | 子龙山人
-https://4gamers.cn/blog/2015-07-19-add-org-mode-support.html
-**** Spacemacs Rocks 第一季 全部视频目录 · Issue #5 · emacs-china/Spacemacs-rocks
-https://github.com/emacs-china/Spacemacs-rocks/issues/5
-**** Spacemacs Rocks 第二季 全部视频目录 · Issue #20 · emacs-china/Spacemacs-rocks
-https://github.com/emacs-china/Spacemacs-rocks/issues/20
-**** Emacs is sexy
-http://emacs.sexy/
-**** Spacemacs Rocks: 中文 FAQ · Issue #6 · emacs-china/Spacemacs-rocks
-https://github.com/emacs-china/Spacemacs-rocks/issues/6
-**** guohangno3/gh-dot-emacs-d: private dot emacs.d directory bak
-https://github.com/guohangno3/gh-dot-emacs-d
-**** Emacs 当前文件快速查找内容 | 子龙山人
-https://4gamers.cn/blog/2015-10-15-nagivate-quickly-in-the-current-buffer.html
-**** zilongshanren (子龙山人)
-https://github.com/zilongshanren
-**** zilongshanren/spacemacs-private: My Spacemacs config
-https://github.com/zilongshanren/spacemacs-private
-**** Emacs org-mode之大纲_emacs学习_IDE_编程学习网_ITEEDU
-http://www.iteedu.com/ide/emacs/org-mode/outline.php
-**** MELPA
-https://melpa.org/#/
-**** cask/cask: Project management tool for Emacs
-https://github.com/cask/cask
-**** [emacs] org-mode的一些小技巧 - 巴蛮子 - 博客园
-http://www.cnblogs.com/bamanzi/p/org-mode-tips.html
-**** git实验之代码提交 - crylearner的专栏 - 博客频道 - CSDN.NET
-http://blog.csdn.net/crylearner/article/details/7685158
-**** elisp - Optional parameter defaults - Emacs Stack Exchange
-http://emacs.stackexchange.com/questions/14199/optional-parameter-defaults
-**** Practical Common Lisp
-http://www.gigamonkeys.com/book/
-**** Save abbrevs in ~/.emacs.d/abbrev_defs?_百度搜索
-https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=Save%20abbrevs%20in%20~%2F.emacs.d%2Fabbrev_defs%3F&rsv_pq=cce88ac70004529c&rsv_t=0664L5ZbBq1xK%2B%2F4kAoBSD9tlcQ5WkNQMVflibdeTy2Lt%2F%2F8PrkZScQivFg&rqlang=cn&rsv_enter=1&rsv_n=2&rsv_sug3=1&rsv_sug2=0&inputT=406&rsv_sug4=406
-**** 用Org-mode实践《奇特的一生》 - 西代零零发 - 博客频道 - CSDN.NET
-http://blog.csdn.net/dc_726/article/details/8623879
-**** Exporting Agenda Views - The Org Manual
-http://orgmode.org/manual/Exporting-Agenda-Views.html
-**** Agenda column view - The Org Manual
-http://orgmode.org/manual/Agenda-column-view.html#Agenda-column-view
-**** Agenda dispatcher - The Org Manual
-http://orgmode.org/manual/Agenda-dispatcher.html#Agenda-dispatcher
-**** Built-in agenda views - The Org Manual
-http://orgmode.org/manual/Built_002din-agenda-views.html#Built_002din-agenda-views
-**** Presentation and sorting - The Org Manual
-http://orgmode.org/manual/Presentation-and-sorting.html#Presentation-and-sorting
-**** Org-mode - 陳聽溪 - 博客园
-http://www.cnblogs.com/taosim/articles/3376130.html
-**** Emacs 的org-mode [agenda view] - 轻风淡云追似远 - 博客频道 - CSDN.NET
-http://blog.csdn.net/donglin425/article/details/7049500?locationNum=2
-**** org-mode，最强的任务管理利器，没有之一
-http://www.360doc.com/content/14/0302/22/16002580_357203601.shtml
-**** org-mode - 热门问答 - 知乎
-http://www.zhihu.com/topic/19649552/hot
-**** Emacs 绑定键盘的技巧。
-http://docs.huihoo.com/homepage/shredderyin/wiki/KeyBinding.html
-**** Elisp
-http://docs.huihoo.com/homepage/shredderyin/emacs_elisp.html
+
+
+** shell
+*** zshell
 **** Xah Lee Web 李杀网
 http://xahlee.org/
 **** zsh_百度搜索
@@ -241,13 +220,13 @@ https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=zsh&rsv_pq=e
 http://ohmyz.sh/
 **** Zsh (简体中文) - ArchWiki
 https://wiki.archlinux.org/index.php/Zsh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
-**** ［推荐］李杀网的elisp简明教程
-https://www.douban.com/group/topic/9719353/
-**** elisp入门_简单学习网
-http://www.tceic.com/jkgllh18h7360h4i2k3l6464.html
+** weixin
+*** default
 **** 管理中心 - 微信开放平台
 https://open.weixin.qq.com/cgi-bin/applist?t=manage/list&lang=zh_CN&token=933b6994e4f9f353b5a58eb526e4681d01a9ab0d
 **** 微信公众平台
 https://mp.weixin.qq.com/cgi-bin/appmsg?begin=0&count=10&t=media/appmsg_list2&type=10&action=list_card&token=737602599&lang=zh_CN
-**** hello , the first
-http://mp.weixin.qq.com/s?__biz=MzIyMjM5MTMzMQ==&tempkey=mjyuPSk9C1zuWya%2FUWONRk3%2B1GpbyHl0LUdJ8FRheljf2QSK6700UBbogwoYstv73Qq9%2FgMq7axoHOQpNvx9IHAxuMuM%2BpiRkhnjU7NCeXKTgifA3UJTZ87ERQEBv9y1ry1qXR3xd40XdVOrvpwsOQ%3D%3D&chksm=682f7c4e5f58f5586b9c240be9eeb583045361f3d0b8b7c62abf98b0f5164cfacd6532c4e02a#rd
+
+* undo
+** Save abbrevs in ~/.emacs.d/abbrev_defs?_百度搜索
+https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=Save%20abbrevs%20in%20~%2F.emacs.d%2Fabbrev_defs%3F&rsv_pq=cce88ac70004529c&rsv_t=0664L5ZbBq1xK%2B%2F4kAoBSD9tlcQ5WkNQMVflibdeTy2Lt%2F%2F8PrkZScQivFg&rqlang=cn&rsv_enter=1&rsv_n=2&rsv_sug3=1&rsv_sug2=0&inputT=406&rsv_sug4=406
