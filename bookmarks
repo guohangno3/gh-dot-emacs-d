@@ -4,17 +4,17 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored-marker"
  (filename . "~/.emacs.d/org-files/gtd.org")
- (front-context-string . "** TODO [#B] 从圆运")
- (rear-context-string . " =>  0:25\n\n\n\n\n\n\n")
- (position . 258))
+ (front-context-string . "** TODO [#C] gol")
+ (rear-context-string . "1-14 周一 09:57]\n\n")
+ (position . 1513))
 ("org-refile-last-stored"
  (filename . "~/.emacs.d/org-files/gtd.org")
- (front-context-string . "** TODO [#B] 从圆运")
- (rear-context-string . " =>  0:25\n\n\n\n\n\n\n")
- (position . 258))
+ (front-context-string . "** TODO [#C] gol")
+ (rear-context-string . "1-14 周一 09:57]\n\n")
+ (position . 1513))
 ("org-capture-last-stored"
  (filename . "~/.emacs.d/org-files/gtd.org")
- (front-context-string . "\n* 娱乐休闲\n\n** TODO")
- (rear-context-string . "\n\n** TODO [#B] \n")
- (position . 510))
+ (front-context-string . "\n** TODO [#C] gi")
+ (rear-context-string . "11-14 周一 10:04]\n")
+ (position . 2500))
 )
