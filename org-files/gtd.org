@@ -24,8 +24,84 @@
 
 
 * Link Notes
-** TODO [#C] 研究emacs编码
+** emacs
+*** org 
+
+**** TODO [#C] org-mode: 最好的文档编辑利器，没有之一
+http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html 
+ [2016-11-14 周一 09:52]
+
+**** TODO [#C] Org-mode,最强的任务管理利器，没有之一
+http://www.cnblogs.com/holbrook/archive/2012/04/14/2447754.html 
+ [2016-11-14 周一 09:55]
+
+**** TODO [#C] 用Org-mode实现GTD
+http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html 
+ [2016-11-14 周一 09:55]
+
+**** TODO [#C] 神器中的神器org-mode之入门篇
+http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html#sec-4-7 
+ [2016-11-14 周一 09:56]
+ 
+
+*** other emacs issue
+
+**** TODO [#C] 研究emacs编码
 http://blog.csdn.net/wxgiter/article/details/6935889
-  [2016-11-12 周六 23:10]
+
+**** TODO [#C] Emacs的书签功能介绍
+http://mp.weixin.qq.com/s?__biz=MzAwOTIxMjg0NQ==&mid=2654974006&idx=1&sn=0409ef34831436603895d9076e460010&chksm=80a816f4b7df9fe2682aef4b9e38f6909586fc61184041172c625371013fab89a9cb4b118b4b&scene=0#wechat_redirect 
+ [2016-11-14 周一 09:56]
+
+**** TODO [#C] 一年成为Emacs高手(像神一样使用编辑器)
+http://blog.csdn.net/redguardtoo/article/details/7222501/ 
+ [2016-11-14 周一 09:58]
+
+**** TODO [#C] Emacs 当前文件快速查找内容
+https://zilongshanren.com/blog/2015-10-15-nagivate-quickly-in-the-current-buffer.html
+ [2016-11-14 周一 10:00]
+
+**** TODO [#C] Mastering Key Bindings in Emacs
+https://www.masteringemacs.org/article/mastering-key-bindings-emacs
+ [2016-11-14 周一 10:01]
+ 
+**** TODO [#C] Master Emacs in 21 Days : Spacemacs Rocks 第二季
+http://book.emacs-china.org/#orgheadline29
+[2016-11-14 周一 10:02]
+
+**** TODO [#C] emacs china
+https://emacs-china.org/
+[2016-11-14 周一 10:03]
+
+**** TODO [#C] ELPA 镜像
+http://elpa.emacs-china.org/
+[2016-11-14 周一 10:03]
+
+**** TODO [#C] MELPA
+http://melpa.org/
+[2016-11-14 周一 10:04]
 
 
+** golang
+
+*** TODO [#C] golang内存分配
+http://www.cnblogs.com/yjf512/p/5147365.html 
+ [2016-11-14 周一 09:57]
+
+*** TODO [#C] go语言web编程
+file:///E:/book/golang/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/preface.html 
+ [2016-11-14 周一 09:58]
+
+*** TODO [#C] Golang之bytes.buffer
+http://studygolang.com/articles/5843 
+ [2016-11-14 周一 09:58]
+ 
+
+** git 
+
+*** TODO [#C] git实验之代码提交
+http://blog.csdn.net/crylearner/article/details/7685158 
+ [2016-11-14 周一 09:56]
+*** TODO [#C] github : guohangno3
+https://github.com/guohangno3/gh-dot-emacs-d
+[2016-11-14 周一 10:04]

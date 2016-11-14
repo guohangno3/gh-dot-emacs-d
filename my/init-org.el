@@ -58,6 +58,7 @@
       ) 
 (global-set-key (kbd "C-c r") 'org-capture)
 
+(setq org-startup-indented t)
 
 
 (require 'org-pomodoro)
