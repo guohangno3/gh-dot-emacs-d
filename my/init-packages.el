@@ -99,6 +99,8 @@
     ;; pallet
 
     iimage
+
+    use-package
     
     )
   "Default packages"
