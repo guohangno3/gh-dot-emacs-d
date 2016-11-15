@@ -1,15 +1,14 @@
 * Link Notes
 ** emacs
 *** org 
-**** org-mode: 最好的文档编辑利器，没有之一
+**** DONE org-mode: 最好的文档编辑利器，没有之一
 http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html 
-**** Org-mode,最强的任务管理利器，没有之一
+**** TODO Org-mode,最强的任务管理利器，没有之一
 http://www.cnblogs.com/holbrook/archive/2012/04/14/2447754.html 
 **** 用Org-mode实现GTD
 http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html 
 **** 神器中的神器org-mode之入门篇
 http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html#sec-4-7 
-
 **** rlister/org-present: Ultra-minimalist presentation minor-mode for Emacs org-mode.
 https://github.com/rlister/org-present
 **** 使用 Org-mode 来写博客 | 子龙山人
@@ -65,7 +64,6 @@ https://github.com/emacs-china/Spacemacs-rocks/issues/5
 https://github.com/emacs-china/Spacemacs-rocks/issues/20
 **** Spacemacs Rocks: 中文 FAQ · Issue #6 · emacs-china/Spacemacs-rocks
 https://github.com/emacs-china/Spacemacs-rocks/issues/6
-
 **** zilongshanren/spacemacs-private: My Spacemacs config
 https://github.com/zilongshanren/spacemacs-private
 *** elpa
@@ -108,39 +106,20 @@ http://elpa.emacs-china.org/
 http://melpa.org/
 **** Emacs学习笔记(7)：简单的配置 - 心内求法 - 博客园
 http://www.cnblogs.com/holbrook/archive/2012/03/06/2381636.html
-
 **** 十个提升效率的emacs配置 - OPEN 开发经验库
 http://www.open-open.com/lib/view/open1431870822229.html
 **** Writing Go in Emacs
 https://dominik.honnef.co/posts/2013/03/emacs-go-1/
-
 **** Getting Started - MELPA
 https://melpa.org/#/getting-started
-
-
 **** Emacs China
 https://emacs-china.org/
 **** Emacs is sexy
 http://emacs.sexy/
-
 **** Emacs 当前文件快速查找内容 | 子龙山人
 https://4gamers.cn/blog/2015-10-15-nagivate-quickly-in-the-current-buffer.html
 **** Emacs 绑定键盘的技巧。
 http://docs.huihoo.com/homepage/shredderyin/wiki/KeyBinding.html
-** golang
-*** default 
-
-**** golang内存分配
-http://www.cnblogs.com/yjf512/p/5147365.html 
-**** go语言web编程
-file:///E:/book/golang/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/preface.html 
-**** Golang之bytes.buffer
-http://studygolang.com/articles/5843 
-**** 文章 - Golang中国
-http://golangtc.com/articles
-
-**** Learn Go in Y Minutes
-https://learnxinyminutes.com/docs/go/
 
 ** git 
 *** git实验之代码提交
@@ -157,22 +136,28 @@ http://blog.csdn.net/crylearner/article/details/7685158
 **** ExcelHome - 全球领先的Excel门户,Office视频教程培训中心
 http://www.excelhome.net/index.html
 
-** new
-**** 酷壳 – CoolShell.cn
-http://coolshell.cn/
+** weixin
+*** default
+**** 管理中心 - 微信开放平台
+https://open.weixin.qq.com/cgi-bin/applist?t=manage/list&lang=zh_CN&token=933b6994e4f9f353b5a58eb526e4681d01a9ab0d
+**** 微信公众平台
+https://mp.weixin.qq.com/cgi-bin/appmsg?begin=0&count=10&t=media/appmsg_list2&type=10&action=list_card&token=737602599&lang=zh_CN
 
-**** 肺、肠胃、肝胆、肾病_萧宏慈_新浪博客
-http://blog.sina.com.cn/s/articlelist_1573471910_13_1.html
-**** 科学与信仰
-http://www.360doc11.net/articlenew.aspx?id=115125338
-**** 华严宗（中国佛教大乘八宗之一）_百度百科
-http://baike.baidu.com/subview/8836/11229608.htm?fr=aladdin
-**** 科学与信仰
-http://www.360doc11.net/articlenew.aspx?id=115125338
-**** 乾为天-第一卦-乾卦-华易算命网
-http://www.k366.com/gua/1200000-11-01.htm
-**** 周易六十四卦详解（通俗易懂版）
-http://www.360doc.cn/3g/article.aspx?userid=52920&id=9804201
+** programming
+*** golang
+
+
+**** golang内存分配
+http://www.cnblogs.com/yjf512/p/5147365.html 
+**** go语言web编程
+file:///E:/book/golang/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/go%E8%AF%AD%E8%A8%80web%E7%BC%96%E7%A8%8B/preface.html 
+**** Golang之bytes.buffer
+http://studygolang.com/articles/5843 
+**** 文章 - Golang中国
+http://golangtc.com/articles
+**** Learn Go in Y Minutes
+https://learnxinyminutes.com/docs/go/
+
 **** 首页 | Go语言中文网 | Golang中文社区 | Golang中国
 http://studygolang.com/
 **** 网友博文 | Go语言中文网 | Golang中文社区 | Golang中国
@@ -181,18 +166,58 @@ http://studygolang.com/articles?lastid=2585
 http://www.hellogcc.org/effective_go.html#channels
 **** 实效Go编程 - Go 编程语言
 http://docscn.studygolang.com/doc/effective_go.html#重新声明
+*** c/c++
+**** 酷壳 – CoolShell.cn
+http://coolshell.cn/
+
+
+*** zshell
+**** Xah Lee Web 李杀网
+http://xahlee.org/
+**** zsh_百度搜索
+https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=zsh&rsv_pq=e4f03a4600029765&rsv_t=b5dfeIWE1bxggPqYYxky11JpY8droq9oo1CYMNdrLN96SrHx%2FxGsF0RL3KU&rqlang=cn&rsv_enter=1&rsv_sug3=3&rsv_sug2=0&inputT=1020&rsv_sug4=1020
+**** Oh My Zsh
+http://ohmyz.sh/
+**** Zsh (简体中文) - ArchWiki
+https://wiki.archlinux.org/index.php/Zsh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+*** default
+**** Learn X in Y Minutes: Scenic Programming Language Tours
+https://learnxinyminutes.com/
+
+** 中医
+*** default
+**** 肺、肠胃、肝胆、肾病_萧宏慈_新浪博客
+http://blog.sina.com.cn/s/articlelist_1573471910_13_1.html
 **** 倪海厦《天纪》《人纪》视频全集下载 | 经方伤寒论网
 http://www.jfshl.com/dajia/105.html
+**** 毛小妹_新浪博客
+http://blog.sina.com.cn/u/1894223787
+**** 潘毅-腾讯视频全网搜
+http://v.qq.com/x/search/?q=%E6%BD%98%E6%AF%85&needCorrect=0&stag=1
+** 易经
+*** default
+**** 乾为天-第一卦-乾卦-华易算命网
+http://www.k366.com/gua/1200000-11-01.htm
+
+**** 周易六十四卦详解（通俗易懂版）
+http://www.360doc.cn/3g/article.aspx?userid=52920&id=9804201
+** 宗教
+*** 佛教
+**** 华严宗（中国佛教大乘八宗之一）_百度百科
+http://baike.baidu.com/subview/8836/11229608.htm?fr=aladdin
+*** 道教
 **** 静坐与打坐的区别      在人间-新浪博客
 http://www.360doc.com/content/14/0415/08/4706327_369084191.shtml
 **** 戒定实修 目录【在人间-希热旺波_新浪博客】
 http://www.360doc.com/content/14/0329/14/4530213_364675360.shtml
-**** 潘毅-腾讯视频全网搜
-http://v.qq.com/x/search/?q=%E6%BD%98%E6%AF%85&needCorrect=0&stag=1
 **** 博文_在人间_新浪博客
 http://blog.sina.com.cn/s/articlelist_2304101637_0_1.html
-**** 毛小妹_新浪博客
-http://blog.sina.com.cn/u/1894223787
+*** default
+
+**** 科学与信仰
+http://www.360doc11.net/articlenew.aspx?id=115125338
+** 视频 
+*** default
 **** 电影 / 最新电影_电影天堂-迅雷电影下载
 http://www.ygdy8.com/html/gndy/dyzz/index.html
 **** 最新电影_电影港
@@ -206,27 +231,7 @@ http://www.iqiyi.com/a_19rrhb3xvl.html
 **** 诛仙电视剧/诛仙青云志全集下载_迅雷下载_迅雷迷电影天堂
 http://www.xunleimi.com/huayudianshiju/42309/?t=1472286490595
 
-**** Learn X in Y Minutes: Scenic Programming Language Tours
-https://learnxinyminutes.com/
 
-
-** shell
-*** zshell
-**** Xah Lee Web 李杀网
-http://xahlee.org/
-**** zsh_百度搜索
-https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=zsh&rsv_pq=e4f03a4600029765&rsv_t=b5dfeIWE1bxggPqYYxky11JpY8droq9oo1CYMNdrLN96SrHx%2FxGsF0RL3KU&rqlang=cn&rsv_enter=1&rsv_sug3=3&rsv_sug2=0&inputT=1020&rsv_sug4=1020
-**** Oh My Zsh
-http://ohmyz.sh/
-**** Zsh (简体中文) - ArchWiki
-https://wiki.archlinux.org/index.php/Zsh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
-** weixin
-*** default
-**** 管理中心 - 微信开放平台
-https://open.weixin.qq.com/cgi-bin/applist?t=manage/list&lang=zh_CN&token=933b6994e4f9f353b5a58eb526e4681d01a9ab0d
-**** 微信公众平台
-https://mp.weixin.qq.com/cgi-bin/appmsg?begin=0&count=10&t=media/appmsg_list2&type=10&action=list_card&token=737602599&lang=zh_CN
-
-* undo
-** Save abbrevs in ~/.emacs.d/abbrev_defs?_百度搜索
+* untreated
+**** Save abbrevs in ~/.emacs.d/abbrev_defs?_百度搜索
 https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=Save%20abbrevs%20in%20~%2F.emacs.d%2Fabbrev_defs%3F&rsv_pq=cce88ac70004529c&rsv_t=0664L5ZbBq1xK%2B%2F4kAoBSD9tlcQ5WkNQMVflibdeTy2Lt%2F%2F8PrkZScQivFg&rqlang=cn&rsv_enter=1&rsv_n=2&rsv_sug3=1&rsv_sug2=0&inputT=406&rsv_sug4=406

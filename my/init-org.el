@@ -50,7 +50,7 @@
 	("t" "Todo" entry (file+headline "~/.emacs.d/org-files/gtd.org" "工作安排")
 	 "** TODO [#B] %?\n  %i\n"
 	 :empty-lines 1)
-	("l" "link" entry (file+headline "~/.emacs.d/org-files/gtd.org" "Link Notes")
+	("l" "link" entry (file+headline "~/.emacs.d/org-files/link.org" "Link Notes")
 	 ;;"* TODO [#C] %?\n %(my-retrieve-chrome-current-tab-url)\n %i\n %U"
 	 "* TODO [#C] %?\n %i\n %U"
 	 )
