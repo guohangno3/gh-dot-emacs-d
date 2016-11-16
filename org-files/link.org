@@ -4,6 +4,7 @@
 **** DONE org-mode: 最好的文档编辑利器，没有之一
 http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html 
 **** TODO Org-mode,最强的任务管理利器，没有之一
+- State "TODO"       from "TODO"       [2016-11-16 周三 22:07]
 http://www.cnblogs.com/holbrook/archive/2012/04/14/2447754.html 
 **** 用Org-mode实现GTD
 http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html 
