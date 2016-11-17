@@ -11,6 +11,7 @@
 ;;;;;; 设置默认 Org Agenda 文件目录
 (setq org-agenda-files 
       '(
+        ;;"~/.emacs.d/org-files/"
         "~/.emacs.d/org-files/gtd.org"
         ;;"~/.emacs.d/org-files/gtd2.org"
 	)
