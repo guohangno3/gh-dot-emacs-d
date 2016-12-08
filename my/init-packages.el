@@ -30,8 +30,7 @@
 
 
 ;; Add Packages
-(defvar my-packages
-  '(
+(defvar my-packages  '(
 
     ;; --- Auto-completion ---
     company
@@ -222,7 +221,7 @@
      (kbd "C-d") 'evil-scroll-down
      (kbd "C-u") 'evil-scroll-up
      ))
- )
+)
 
 
 (global-evil-leader-mode)
